@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Class-based dark mode: `dark:` utilities apply when <html class="dark"> (set by next-themes) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  Pastel colour palette — change these values to re-theme the whole site.
+  Each --color-NAME becomes Tailwind classes: bg-NAME, text-NAME, border-NAME, ...
+*/
+@theme {
+  --color-primary: #8b7cf6;        /* soft purple — main buttons, icons */
+  --color-primary-hover: #7a6ae8;  /* slightly deeper purple for hover */
+  --color-secondary: #7fb3f5;      /* soft blue — second accent */
+  --color-accent: #7c6cf0;         /* purple for small headings on light bg */
+  --color-accent-light: #c4b8ff;   /* light purple for small headings on dark bg */
+  --color-ink: #2e2a5c;            /* deep indigo — main text on pastel backgrounds */
+  --color-lavender: #f3f0ff;       /* pastel purple section background */
+  --color-sky: #eaf3ff;            /* pastel blue section background */
+}
